@@ -1,10 +1,7 @@
 FROM alpine:3.7
 MAINTAINER "Bulat Vakhitov - https://github.com/fclmman"
 
-EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
-
-#COPY rootfs /
 
 ENV NGINX_VERSION 1.15.1
 

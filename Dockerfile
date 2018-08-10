@@ -31,7 +31,7 @@ RUN cd /tmp/nginx-${NGINX_VERSION} \
     \
     --prefix=/etc/nginx \
     --sbin-path=/usr/sbin/nginx \
-    --conf-path=/home/spnego/config/nginx.conf \
+    --conf-path=/etc/nginx/nginx.conf \
     --error-log-path=/var/log/nginx/error.log \
     --pid-path=/var/run/nginx.pid \
     --lock-path=/var/run/nginx.lock \

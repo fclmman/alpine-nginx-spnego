@@ -36,9 +36,10 @@ services:
 #add volume with the keytab file
         volumes:
             - ./config:/home/spnego/config
+            - ./config/nginx.conf:/etc/nginx/nginx.conf
 ```
 
-Your nginx.conf and web.keytab should be in the ./config volume, as the config path is set to /home/spnego/config and ketab is also should be available in container.
+Your nginx.conf and web.keytab should be in the ./config volume, as they should be available in container.
 Your nginx.conf will look like
 
 ```
